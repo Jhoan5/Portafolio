@@ -1,4 +1,39 @@
+# Virtual environment
 .venv
+
+# Python cache directories
 __pycache__
-.vscode
-.git
+
+# IDE/editor directories
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build directories
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# System files
+.DS_Store
+
+# Miscellaneous
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.rar
+
+# Exclude all files in .vscode except extensions.json
+.vscode/*
+!.vscode/extensions.json

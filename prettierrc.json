@@ -1,0 +1,22 @@
+{
+  "endOfLine": "crlf",
+  "requirePragma": false,
+  "insertPragma": false,
+  "overrides": [
+    {
+      "files": "*.{js,jsx,ts,tsx}",
+      "options": {
+        "printWidth": 80,
+        "arrowParens": "always",
+        "bracketSpacing": true,
+        "proseWrap": "always",
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "useTabs": false,
+        "trailingComma": "none"
+      }
+    }
+  ],
+  "ignoreFiles": ["node_modules/**/*", ".venv/**/*", "__pycache__/**/*"]
+}

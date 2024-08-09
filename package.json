@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of a web designer and developer with expertise in HTML, CSS, JavaScript, Python, React, Flask, SQL, data analysis, and more",
+  "main": "main.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jhoan5/portafolio.git"
+  },
+  "author": "Jhoan5",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jhoan5/portafolio/issues"
+  },
+  "homepage": "https://github.com/Jhoan5/portafolio#readme",
+  "devDependencies": {
+    "stylelint": "^16.8.1",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-order": "^6.0.4"
+  }
+}
+
