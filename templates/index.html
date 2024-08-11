@@ -1,240 +1,35 @@
-{% extends 'base.html' %} {% block main %}
-<style>
-  img {
-    width: 300px;
-    height: 200px;
-  }
-</style>
-<section class="about">
-  <div class="about-profile">
-    <img src="" alt="Profile photo" />
-    <h1>Hola , Jhoan Díaz</h1>
-    <p>
-      Programador Junior , enfocado en el aprendizaje, con expectativa en el
-      fascinante mundo del desarrollo web y bases de datos, para contribuir con
-      soluciones innovadoras y eficientes. Demostrando mis capacidades y valor
-      en el mercado. JavaScript | Python | SQL | Excel
-    </p>
-    <button>Descargar CV</button>
-    <button>Contratar</button>
-  </div>
-  <div class="about-skills">
-    <h2>Habilidades</h2>
-    <p>
-      Investigación | Colaboración | Recursividad | Compromiso | Responsabilidad
-      | Aprendizaje | Gestión del tiempo
-    </p>
-  </div>
-</section>
-<section class="lenguages">
-  <h2>Lenguajes y Tecnologías</h2>
-  <div class="lenguage-card">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-      loading="lazy"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portfolio of a web designer and developer with expertise in HTML, CSS, JavaScript, Python, React, Flask, SQL, data analysis, and more."
     />
-    <h4>HTML</h4>
-  </div>
-  <div class="lenguage-card">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-      loading="lazy"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, web development, Data analysis, Flask, Frontend, Backend, Python, SQL, React, Full Stack"
     />
-    <h4>CSS</h4>
-  </div>
-  <div class="lenguage-card">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-      loading="lazy"
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
     />
-    <h4>JavaScript</h4>
-  </div>
-  <div class="lenguage-card">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-      loading="lazy"
-    />
-    <h4>Python</h4>
-  </div>
-  <div class="lenguage-card">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg"
-      loading="lazy"
-    />
-    <h4>Flask</h4>
-  </div>
-  <div class="lenguage-card">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
-      loading="lazy"
-    />
-    <h4>MySQL</h4>
-  </div>
-  <div class="lenguage-card">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-      loading="lazy"
-    />
-    <h4>Bootstrap</h4>
-  </div>
-  <div class="lenguage-card">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-      loading="lazy"
-    />
-    <h4>Git</h4>
-  </div>
-</section>
-<section class="projects">
-  <h2>Proyectos</h2>
-  <section class="feature-projects">
-    <h3>Destacados</h3>
-    <div class="project-card">
-      <a href=""><img src="" alt="" loading="lazy" /></a>
-      <h2>Calculadora</h2>
-      <p><b>Tecnologías:</b> JavaScript( DOM - POO - MVC )</p>
-      <article>
-        <b>Objetivos</b>
-        <ul>
-          <li>Ofrecer una Calculadora en forma de componente</li>
-          <li>Realizar validación adecuada a operaciones</li>
-          <li>Fácil y rápida de integrar en proyectos</li>
-        </ul>
-        <b>Logros</b>
-        <ul>
-          <li>Conocimientos sobre expresiones regulares</li>
-          <li>Calculadora funcional con mouse y teclado</li>
-          <li>Integración de calculadora a travez del DOM y MVC</li>
-        </ul>
-      </article>
-    </div>
-    <div class="project-card">
-      <a href=""><img src="" alt="" loading="lazy" /></a>
-      <h2>Calzados - base de datos</h2>
-      <p><b>Tecnologías:</b> HTML-CSS, PHP, MySQL</p>
-      <article>
-        <b>Objetivos</b>
-        <ul>
-          <li>Ofrecer una interfaz para manejar una base de datos</li>
-          <li>Establecer direntes permisos admin y user para el acceso</li>
-          <li>Utilizar el lenguaje PHP en el proceso</li>
-        </ul>
-        <b>Logros</b>
-        <ul>
-          <li>Página funcional con base de datos</li>
-          <li>Capacidad de ser usada en negocios reales</li>
-          <li>Validación de información para evitar inyección de código SQL</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-  <section class="intermediate-projects">
-    <h3>Intermedio</h3>
-    <div class="project-card">
-      <a href="https://sebastian7050.pythonanywhere.com/"
-        ><img src="" alt="" loading="lazy"
-      /></a>
-      <h2>Trabajo eficiente</h2>
-      <p><b>Tecnologías:</b> HTML-CSS, Python( Flask ), API</p>
-      <article>
-        <b>Objetivos</b>
-        <ul>
-          <li>Fitrar sitios web de ofertas laborales</li>
-          <li>Integración de datos reales</li>
-          <li>Facilitar busqueda de trabajo</li>
-        </ul>
-        <b>Logros</b>
-        <ul>
-          <li>Manejo de peticiones con Flask Python</li>
-          <li>Filtrar misma oferta en diferentes sitios</li>
-        </ul>
-      </article>
-    </div>
-    <div class="project-card">
-      <a href=""><img src="" alt="" loading="lazy" /></a>
-      <h2>Bloc de Notas</h2>
-      <p><b>Técnologías:</b> .NET C#</p>
-      <article>
-        <b>Objetivos</b>
-        <ul>
-          <li>Imitar funcionales de bloc de notas de windows</li>
-          <li>Crear aplicación ejecutable .exe en windows</li>
-          <li>Manejo de Visual Basic y funciones</li>
-        </ul>
-        <b>Logros</b>
-        <ul>
-          <li>Bloc de notas simple y funcional con ejecutable</li>
-          <li>Conocimientos sobre POO en Visual Basic</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-  <section class="basic-projects">
-    <h3>Básicos | web estaticas</h3>
-    <div class="project-card">
-      <a
-        href="https://66438152858fb72cd352f3d3--cerulean-semifreddo-098f87.netlify.app/"
-        ><img src="" alt="" loading="lazy"
-      /></a>
-      <h2>El marqués</h2>
-      <p><b>Tecnologías:</b> HTML-CSS, Bootstrap template</p>
-      <article>
-        <b>Objetivo</b>
-        <ul>
-          <li>Manipular plantillas de Bootstrap</li>
-          <li>Prueba de Conocimientos</li>
-          <li>Simular entorno de negocio real</li>
-        </ul>
-        <b>Logros</b>
-        <ul>
-          <li>Página web estatica</li>
-          <li>Conocimientos en Modales y ventanas emergentes</li>
-          <li>Simulación de un entorno real web</li>
-        </ul>
-      </article>
-    </div>
-    <div class="projects-card">
-      <a href="https://renta-autos-sena.netlify.app/"
-        ><img src="" alt="" loading="lazy"
-      /></a>
-      <h2>Renta autos sena</h2>
-      <p><b>Tecnologías:</b> HTML-CSS, Bootstrap template</p>
-      <article>
-        <b>Objetivos</b>
-        <ul>
-          <li>Simular servicio de renta de autos</li>
-          <li>Manejo de plantillas bootstrap</li>
-          <li>Concluir solución a problema planteado por el SENA</li>
-        </ul>
-        <b>Logros</b>
-        <ul>
-          <li>Página web estatica</li>
-          <li>Manejo de Boostrat</li>
-          <li>Cumplimiento con la tarea asignada</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-</section>
-<section class="education">
-  <div class="education-card">
-    <a href=""><img src="" alt="" /></a>
-    <h2>
-      Técnico Laboral Por Competencias en Operación de Programas Informaticos y
-      Bases de Datos
-    </h2>
-    <p><b>Institución:</b>Instituto Colombiano de Aprendizaje Incap</p>
-  </div>
-  <h3>Cursos</h3>
-  <div class="education-card">
-    <a href=""><img src="" alt="" /></a>
-    <h2>Complementaria Sena</h2>
-    <ul>
-      <li>VARIABLES Y ESTRUCTURAS DE CONTROL EN PYTHON</li>
-      <li>CONCEPTUALIZACION DEL LENGUAJE DE PROGRAMACION C++</li>
-      <li>ESTRUCTURA DEL LENGUAJE DE PROGRAMACION C++ (NIVEL I)</li>
-      <li>FORMULACION DE SISTEMAS DE GESTION AMBIENTAL</li>
-    </ul>
-  </div>
-</section>
-{% endblock %}
+  </head>
+  <body>
+    {% include 'sections/header.html' %}
+    <!--  -->
+    {% include 'sections/header-card.html' %}
+    <!--  -->
+    {% include 'sections/about.html' %}
+    <!--  -->
+    {% include 'sections/projects.html' %}
+    <!--  -->
+    {% include 'sections/education.html' %}
+    <!--  -->
+    {% include 'sections/footer.html' %}
+    <!--  -->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  </body>
+</html>
