@@ -96,4 +96,6 @@ GNU 3.0
 
 # Agradecimientos
 
-Agradezco a todos aquellos que han contribuido a mi desarrollo profesional y a aquellos que deseen contribuir a este proyecto.
+Agradezco a todos aquellos que han contribuido a mi desarrollo profesional y a aquellos que deseen contribuir a este proyecto 😄
+
+> Este proyecto ya no se mantiene, no acepta colaboraciones, solo lectura.
